@@ -1,0 +1,94 @@
+# Dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# Environment variables & secrets (CRITICAL: Never commit passwords or credentials)
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+**/.env
+**/.env.*
+**/.env.local
+!**/.env.example
+!**/.env.template
+
+# Credentials, Keys & Certificates
+**/gcp-credentials.json
+*credentials*.json
+*secret*.json
+config.json
+/config.json
+*.pem
+*.key
+*.cert
+*.crt
+*.keystore
+*.jks
+*.p12
+*.p8
+
+# User Uploads & Media (bills, receipts, exported reports)
+uploads/*
+!uploads/.gitkeep
+**/uploads/*
+!**/uploads/.gitkeep
+apps/api/uploads/*
+!apps/api/uploads/.gitkeep
+apps/api/uploads/bills/*
+!apps/api/uploads/bills/.gitkeep
+apps/api/uploads/reports/*
+!apps/api/uploads/reports/.gitkeep
+
+# Databases & local storage
+*.sqlite
+*.sqlite-journal
+*.db
+*.db-journal
+
+# Build & compiled outputs
+dist/
+**/dist/
+build/
+**/build/
+web-build/
+**/web-build/
+.expo/
+**/.expo/
+apps/mobile/expo-env.d.ts
+*.tsbuildinfo
+coverage/
+
+# Logs & debugging
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# System & OS files
+.DS_Store
+**/.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Editor files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.sw?
+
+# Native mobile build files (iOS / Android)
+ios/Pods/
+ios/build/
+android/.gradle/
+android/app/build/
+android/local.properties

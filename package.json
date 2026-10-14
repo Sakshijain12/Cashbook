@@ -1,0 +1,14 @@
+{
+  "name": "cashbook",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "setup": "npm ci --prefix apps/api && npm ci --prefix apps/mobile",
+    "dev:api": "npm run dev --prefix apps/api",
+    "dev:mobile": "npm start --prefix apps/mobile",
+    "test": "npm test --prefix apps/api",
+    "build:api": "npm run build --prefix apps/api",
+    "typecheck:mobile": "npm run typecheck --prefix apps/mobile"
+  }
+}
